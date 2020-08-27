@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css"></link>
     <script src="anime.min.js"></script>
     <link rel="stylesheet" href="animate.css">
   </head>
@@ -18,185 +19,24 @@
 
     /* For fancy gradient */
 
-    textPath {
-      font-weight: 600;
-      font-size: 2em;
-    }
-
-    .back {
-      z-index: -1;
-      position: absolute;
-      width: 100vw;
-    }
-
-    .fullscreen {
-      width: 100vw;
-      z-index: -1;
-      position: absolute;
-    }
-
-
-    a:link {
-      text-decoration: none;
-    }
-
-    .main-grid {
-      display: grid;
-      /* justify-content: center; */
-      background-color: transparent;
-      /* grid-template-rows: 1fr;
-      grid-template-columns: 20% 1fr 30%; */
-    }
-
-    .left-col {
-      padding: 25px;
-    }
-
-    .hidden { display: none; }
-
-    #heading {
-      font-size: 28px;
-    }
-
-    #mobile-heading {
-      font-size: 40px;
-      display: none;
-      /* visibility: hidden; */
-    }
-
-    #left-text {
-      display: grid;
-      grid-template-rows: auto;
-      text-align: left;
-      position: fixed;
-      top: 25%;
-    }
-
-    .info-grid {
-      display: grid;
-      place-self: center;
-      grid-template-rows: auto;
-      grid-template-columns: 1fr;
-      padding: 25px;
-      max-width: 50%;
-    }
-
-    .right-col {
-      display: grid;
-      grid-template-rows: auto;
-    }
-
-    #mobile-contact {
-      display: none;
-    }
-
-    #contact-me-grid {
-      display: grid;
-      align-items: center;
-      width: 125px;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .cm-el {
-      display: grid;
-    }
-
-    .pic {
-      width: 100%;
-    }
-
-    .pic::before {
-      box-shadow: 0 0 8px 8px #fff inset;
-    }
-
-    .bold {
-      font-weight: bold;
-    }
-
-    .light {
-      font-weight: 250;
-      letter-spacing: 2px;
-    }
-
-    .el {
-      display: grid;
-    }
-
-    .secondary {
-      font-size: 26px;
-    }
-
-    .detail {
-      font-size: 16px;
-    }
-
-    .mini-card {
-      /* display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; */
-      height: 100px;
-      width: 100px;
-      background-color: #fff;
-      box-shadow: -5px 0px 39px 0px rgba(0,0,0,0.15);
-      -webkit-box-shadow: -5px 0px 15px 0px rgba(0,0,0,0.15);
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      flex-direction: column;
-      -webkit-transition: .2s;
-      transition: .2s;
-      margin: 0;
-      /* margin-left: -5rem; */
-      border-radius: 16px;
-      /* border-radius: .25rem; */
-      /* border: 1px solid rgba(0,0,0,.125); */
-      /* border-color: black; */
-      /* padding: 20px; */
-    }
-
-    @media screen and (max-width: 480px) {
-      .main-grid {
-        grid-template-columns: 1fr;
-      }
-      .left-col {
-        /* visibility: hidden; */
-        display: none;
-      }
-      .right-col {
-        display: none;
-      }
-      .info-grid {
-        padding-top: 0px;
-        max-width: 100%;
-      }
-      #mobile-heading {
-        display: unset;
-        /* visibility: visible; */
-      }
-      #mobile-contact {
-        display: unset;
-      }
-    }
-
-
-
   </style>
   <body>
     <div class="main-grid">
       <svg class="back" xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 400 400">
         <g transform="translate(0,150)">
-          <path fill-opacity="0.9" d="M62,3.7C62,73,31,146,-19.8,146C-70.7,146,-141.3,73,-141.3,3.7C-141.3,-65.7,-70.7,-131.3,-19.8,-131.3C31,-131.3,62,-65.7,62,3.7Z" fill="#51cf66"/>
+          <path fill-opacity="0.6" d="M62,3.7C62,73,31,146,-19.8,146C-70.7,146,-141.3,73,-141.3,3.7C-141.3,-65.7,-70.7,-131.3,-19.8,-131.3C31,-131.3,62,-65.7,62,3.7Z" fill="#51cf66"/>
         </g>
       </svg>
       <svg class="back" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
         <defs>
         </defs>
         <g transform="translate(0,400)">
-          <path fill-opacity="0.8" d="M116.8,-95.7C148.3,-85.3,168.7,-42.7,158.3,-10.4C147.9,21.9,106.8,43.8,75.3,75.8C43.8,107.8,21.9,149.9,-10.3,160.2C-42.4,170.4,-84.9,148.9,-130.9,116.9C-176.9,84.9,-226.4,42.4,-215.6,10.8C-204.7,-20.7,-133.5,-41.5,-87.5,-51.8C-41.5,-62.2,-20.7,-62.1,11,-73C42.7,-84,85.3,-106,116.8,-95.7Z" fill="#FFB4BC"/>
+          <path fill-opacity="0.6" d="M116.8,-95.7C148.3,-85.3,168.7,-42.7,158.3,-10.4C147.9,21.9,106.8,43.8,75.3,75.8C43.8,107.8,21.9,149.9,-10.3,160.2C-42.4,170.4,-84.9,148.9,-130.9,116.9C-176.9,84.9,-226.4,42.4,-215.6,10.8C-204.7,-20.7,-133.5,-41.5,-87.5,-51.8C-41.5,-62.2,-20.7,-62.1,11,-73C42.7,-84,85.3,-106,116.8,-95.7Z" fill="#FFB4BC"/>
         </g>
       </svg>
       <svg class="back" xmlns="http://www.w3.org/2000/svg" width height viewBox="0 0 600 600">
         <g transform="translate(600,300)">
-          <path fill-opacity="0.9" d="M129.9,-195C148.9,-165,131.5,-101,147.9,-48.6C164.2,3.9,214.3,44.9,205.2,64.7C196.1,84.5,127.7,83.1,83.6,115C39.6,146.8,19.8,211.9,-7.3,222C-34.5,232.1,-69,187.3,-85.1,146.3C-101.3,105.4,-99.2,68.5,-111.1,35.3C-123,2.1,-149,-27.4,-149.1,-55C-149.2,-82.7,-123.4,-108.5,-94.2,-135.2C-65,-161.9,-32.5,-189.4,11.5,-205.2C55.4,-221,110.9,-225,129.9,-195Z" fill="#fcc419"/>
+          <path fill-opacity="0.6" d="M129.9,-195C148.9,-165,131.5,-101,147.9,-48.6C164.2,3.9,214.3,44.9,205.2,64.7C196.1,84.5,127.7,83.1,83.6,115C39.6,146.8,19.8,211.9,-7.3,222C-34.5,232.1,-69,187.3,-85.1,146.3C-101.3,105.4,-99.2,68.5,-111.1,35.3C-123,2.1,-149,-27.4,-149.1,-55C-149.2,-82.7,-123.4,-108.5,-94.2,-135.2C-65,-161.9,-32.5,-189.4,11.5,-205.2C55.4,-221,110.9,-225,129.9,-195Z" fill="#fcc419"/>
         </g>
       </svg>
       <div class="left-col">
@@ -220,23 +60,34 @@
           <div id="first-block" class="el">
             <h4>I'm studying computer science at the University of Michigan</h4>
             <h4 class="secondary bold">Where I've Worked</h4>
-            <h6 class="detail"><a class="link" target="_blank" href="http://tripiq.getforge.io/">RecTable</a> - Co-Founder of a SaaS product that consolidates data for small restaurants to provide simple and actionable recommendations</h6>
-            <h6 class="detail"><a class="link" target="_blank" href="http://tripiq.getforge.io/">TRIPIQ</a> - Co-Founder of an iOS app that uses AI to create personalized travel itineraries</h6>
+            <h6 class="detail"><a class="link" target="_blank" href="https://chimemenu.com">Chime Menu</a> - Co-Founder of a QR-based online ordering and delivery platform for in person dining. Currently raising angel investment</h6>
             <h6 class="detail"><a class="link" target="_blank" href="https://langlangit.com/login.action">LangLang IT</a> - Software Intern at a Chinese startup that uses AI to predict irregular heart rhythms</h6>
             <h6 class="detail"><a class="link" target="_blank" href="http://najarianlab.ccmb.med.umich.edu/node/390">U of M Bioinformatics Lab</a> - Research Intern on a project that predicts healing time for diabetic foot ulcers from image and clinical data</h6>
           </div>
 
           <div id="second-block" class="el">
             <h4 class="secondary bold">What I've Made</h4>
-            <h6 class="detail"><a class="link" target="_blank" href="https://shadow-robotics.com/">Shadow</a> - Worked full stack to create an Electron app that automated Google sign in to generate activity on multiple Gmail accounts simultaneously</h6>
-            <h6 class="detail"><a class="link" target="_blank" href="">Rashio</a> - Developed Rashio, the first iOS app utilizing Machine Learning models in rash diagnosis</h6>
+            <h6 class="detail"><a class="link" target="_blank" href="https://shadow-robotics.com/">Shadow</a> - Worked full stack to create an Electron app that allows users to automate activity on multiple Gmail accounts simultaneously</h6>
+            <h6 class="detail"><a class="link" target="_blank" href="http://tripiq.getforge.io/">TRIPIQ</a> - An iOS app that uses AI to create personalized travel itineraries</h6>
             <h6 class="detail"><a class="link" target="_blank" href="https://devpost.com/software/cytrus-networking-for-software-freelancers">Cytrus</a> - Tinder for software freelancers, created during MHacks 12 </h6>
           </div>
 
           <div class="el">
             <h4 class="secondary bold">Activties & Awards</h4>
             <h6 class="detail"><a class="link" target="_blank" href="https://www.youtube.com/watch?v=MHfiT3apxDU">MHacks 11 Guest Speaker</a> - Presented a tech talk - “Integrating ML into your iOS app: a crash course” at Mhacks 11</h6>
-            <h6 class="detail"><a class="link" target="_blank" href="https://creatorspace.co/">Shift Creator Space</a> - Member of a student-run creator space on campus</h6>
+            <h6 class="detail"><a class="link" target="_blank" href="https://creatorspace.co/">EECS 183 Showcase Winner</a> - Awarded best use of "Creative AI" out of hundreds of peer projects</h6>
+            <h6 class="detail"><a class="link" target="_blank" href="https://creatorspace.co/">Shift Creator Space</a> - Co-director of a creator space on campus</h6>
+          </div>
+          <div class="el">
+            <h4 class="secondary bold">My Stack</h4>
+            <div class="img-wrapper">
+              <img class="image" src="assets/stackImages/react.png" alt="React">
+              <img class="image" src="assets/stackImages/python.png" alt="Python">
+              <img class="image" src="assets/stackImages/typescript.png" alt="Typescript">
+              <img class="image" src="assets/stackImages/postgres.png" alt="PostgresQL">
+              <img class="image" src="assets/stackImages/aws.png" alt="AWS">
+              <img class="image" src="assets/stackImages/gcloud.png" alt="Google Cloud">
+            </div>
           </div>
           <div id="mobile-contact" class="el">
             <h4 class="secondary bold">Contact Me</h4>
