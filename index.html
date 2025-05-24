@@ -4,9 +4,33 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Zhong</title>
-    <link rel="stylesheet" href="assets/style.css">
     </link>
 </head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        max-width: 80vw;
+    }
+
+    .el {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+    }
+
+    /* Add media query for smartphones */
+    @media only screen and (max-width: 600px) {
+        .el {
+            grid-template-columns: 100px 1fr;
+        }
+    }
+</style>
 
 <body>
     <div class="main">
